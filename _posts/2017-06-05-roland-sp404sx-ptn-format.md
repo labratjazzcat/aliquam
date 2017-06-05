@@ -1,9 +1,9 @@
 ---
 layout: post
-title: spEdit Prototype
+title: Roland SP404SX Pattern Format
 category: spedit
 comments: false
-description: spEdit is a tool for modifying and creating binary pattern files for the Roland SP-404SX.
+description: Roland SP404SX binary pattern format
 tags:
     - spedit
 ---

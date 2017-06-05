@@ -4,8 +4,7 @@
 ##########################################
 
 # Set this for Copyright in the footer
-owner: Name Surname
-
+owner: Robert Gonzalez
 # Optional quote in the footer
 # To disable set enable to false
 quote:
@@ -15,19 +14,19 @@ quote:
 
 # Set this to your main site title. If page doesn't have its own title,
 # then this title will be used.
-title: Aliquam Theme
+title: Experimental Technology
 
 
 # Following needed for disqus integration
 # Set your 'disqus' account name
-disqus:
+disqus: disqus_DUaPsiqM14
 
 # Uncomment if deployed locally
 #url: https://localhost:4000
 
 # Set your host if deployed not locally
 # For example "https://yourGitHub.github.io"
-url:
+url: https://labratjazzcat.github.io
 
 # Change this to your base URL starting with forward slash if site is in gh-pages branch
 # For example /branchName
@@ -35,10 +34,10 @@ url:
 baseurl:
 
 # Change this to your google analytics ID
-google_analytics:
+google_analytics: UA-100526594-1
 
 # Contact form pupublic key
-contact_PK:
+contact_PK: 0e9db451e99342a63422f3029bfd521d
 
 ##########################################
 #          Optional variables

@@ -5,10 +5,14 @@ category: spedit
 comments: false
 description: Roland SP404SX binary pattern format
 tags:
-    - spedit
+  - spedit
+published: true
 ---
 
 ## The Roland SP-404SX Pattern Format
 
-
-
+---
+|00|00|00|00|00|00|0000|
+|aa|bb|cc|dd|ee|ff|gggg|
+---
+- aa = Number of Ticks till next note

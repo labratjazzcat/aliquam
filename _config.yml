@@ -9,8 +9,8 @@ owner: Robert Gonzalez
 # To disable set enable to false
 quote:
   enable: true
-  quote: Some fancy quote
-  author: John Doe
+  quote: Mistakes are the portals of discovery.
+  author: 
 
 # Set this to your main site title. If page doesn't have its own title,
 # then this title will be used.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roland SP404SX Pattern Format
+title: Roland SP-404SX Pattern Format
 category: spedit
 comments: false
 description: Roland SP404SX binary pattern format

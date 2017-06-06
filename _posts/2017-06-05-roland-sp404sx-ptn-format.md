@@ -48,7 +48,7 @@ Specifies the bank offset and pad number according to the following formula: Pad
 <div class="env-header">python</div>
 {% highlight python linenos %}
 real_code = int(hex_code, 16) - 46
-bank = real_code $\textdiv$ 12
+bank = real_code / 12
 pad = real_code % 12
 if pad == 0:
 	pad = 12

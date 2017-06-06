@@ -18,14 +18,19 @@ The Roland SP-404SX is a portable hardware sampler with the ability to store pat
 
 <center>
 1. 60 5e 00 00 7f 40 00 3c
+
 2. 60 5d 00 00 7f 40 00 3c
+
 3. 60 5b 00 00 7f 40 00 3c
+
 4. 60 5c 00 00 7f 40 00 3c
+
 5. 00 8C 00 00 00 00 00 00 
+
 6. 00 01 00 00 00 00 00 00
 </center>
 
-The last 2 lines of each pattern file are an end encoding in which the 3rd and 4th byte of the last line represent the length of the pattern in bars. Each bar in the SP-404SX is divided into 384 _ticks_. The following is a breakdown of the first line.
+The last 2 lines of each pattern file are an end encoding in which the 3rd and 4th byte of the last line represent the length of the pattern in bars, in this case 1. Each bar in the SP-404SX is divided into 384 _ticks_. The following is a breakdown of the first line.
 
 <center>
 1. 60 5e 00 00 7f 40 00 3c   

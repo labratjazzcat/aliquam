@@ -14,7 +14,7 @@ published: true
 <img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 300px;"/>
 </center>
 
-The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at ROLAND/SP-404SX/PTN/. This is an example pattern file viewed as hex:
+The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored as binary files on a removable SD card at ROLAND/SP-404SX/PTN/. This is an example pattern file viewed as hex:
 
 <div class="env-header">hex of binary</div>
 {% highlight python linenos %}
@@ -44,7 +44,7 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 ### Next Sample
 Specifies the number of _ticks_ untill the next sample in the pattern should be triggered. For samples played simultaneously all but one have a Next Sample value of 0, play the next sample 0 ticks after the current sample. All 4 samples in the example pattern have a Next Note value of 0x60 which is the hex value that represents a quater bar. 384 / 4 = 96 or 0x60. 
 ### Pad Code
-Specifies the bank offset and pad number according to the following formula: Pad Code = bank_offset*12 + pad_number(1-12) + 46. This is a snippet of the function that generates the bank letter and pad number from the hex code.
+Specifies the bank offset and pad number according to the following formula: Pad Code = bank_offset*12 + pad_number(1-12) + 46. This is a snippet of a function that generates the bank offset and pad number from the hex code.
 <div class="env-header">python</div>
 {% highlight python linenos %}
 real_code = int(hex_code, 16) - 46

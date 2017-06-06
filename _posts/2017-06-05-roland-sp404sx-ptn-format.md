@@ -16,12 +16,15 @@ published: true
 
 The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at ROLAND/SP-404SX/PTN/. This is an example pattern file viewed as hex:
 
-1. 60 5E 00 00 7F 40 00 3C
-2. 60 5D 00 00 7F 40 00 3C
-3. 60 5B 00 00 7F 40 00 3C
-4. 60 5C 00 00 7F 40 00 3C
-5. 00 8C 00 00 00 00 00 00 
-6. 00 01 00 00 00 00 00 00
+<div class="env-header">hex of binary</div>
+{% highlight python linenos %}
+  60 5E 00 00 7F 40 00 3C
+  60 5D 00 00 7F 40 00 3C
+  60 5B 00 00 7F 40 00 3C
+  60 5C 00 00 7F 40 00 3C
+  00 8C 00 00 00 00 00 00 
+  00 01 00 00 00 00 00 00
+{% endhighlight %}
 
 The last 2 lines of each pattern file are an end encoding in which the 3rd and 4th bytes of the last line represent the length of the pattern in bars, in this case 1. Each bar in the SP-404SX is divided into 384 _ticks_. The following is an analysis of the first line of the pattern file, . 
 

@@ -42,12 +42,16 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 Specifies the number of _ticks_ untill the next sample in the pattern should be triggered. For samples played simultaneously all but one have a Next Sample value of 0, play the next sample 0 ticks after the current sample. All 4 samples in the example pattern have a Next Note value of 0x60 which is the hex value that represents a quater bar. 384 / 4 = 96 or 0x60. 
 ### Pad Code
 Specifies the bank offset and pad number according to the following formula: Pad Code = bank_offset*12 + pad_number(1-12) + 46. For the first line in the example pattern the Pad Code specifies the bank offset 3, pad number 12.
-- `real_code = int(hex_code, 16) - 46`
-- `bank = real_code $\textdiv$ 12`
-- `pad = real_code % 12`
-- `if pad == 0:`
-- `... pad = 12`
-- `... bank -= 1`
+<div class="env-header">python</div>
+{% highlight python linenos %}
+real_code = int(hex_code, 16) - 46
+bank = real_code $\textdiv$ 12
+pad = real_code % 12
+if pad == 0:
+	pad = 12
+	bank -= 1
+{% endhighlight %}
+
 ### Bank Switch 
 Specifies whether the bank offset refers to the top row(A/B/C/D/E), 00 or the bottom row(F/G/H/I/J), 01. For the first line in the example pattern the Bank Switch is 00 so the sample this line refers to is D12.
 ### Velocity

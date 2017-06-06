@@ -10,8 +10,9 @@ published: true
 ---
 
 ## The Roland SP-404SX Pattern Format
-
-<img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 400px;" align="middle"/>
+<center>
+<img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 300px;"/>
+</center>
 
 The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at ROLAND/SP-404SX/PTN. Here is an  example pattern file:
 
@@ -33,7 +34,7 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 - 00 = ???
 - 7f = Velocity (1-127)
 - 40 = ???
-- 003c = Length of Sample (double byte)
+- 003c = Length of Sample 
 
 ### Next Note
 ### Pad Code

@@ -10,11 +10,11 @@ owner: Robert Gonzalez
 quote:
   enable: true
   quote: Mistakes are the portals of discovery.
-  author: 
+  author: James Joyce
 
 # Set this to your main site title. If page doesn't have its own title,
 # then this title will be used.
-title: Experimental Technology
+title: ByteFlip
 
 
 # Following needed for disqus integration

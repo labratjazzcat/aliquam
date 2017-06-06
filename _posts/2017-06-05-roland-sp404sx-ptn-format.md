@@ -30,7 +30,7 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 </center>
 
 
-- 60 = **Next Note**
+- 60 = **Next Sample**
 - 5e = **Pad Code**
 - 00 = **Bank Switch** (00 or 01)
 - 00 = ???
@@ -38,12 +38,15 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 - 40 = ???
 - 003c = **Length**
 
-### Next Note
-Specifies the number of _ticks_ untill the next note in the pattern should be triggered. For notes played simultaneously all but one have a Next Note value of 0, which makes sense play the next sample 0 ticks after this sample.
+### Next Sample
+Specifies the number of _ticks_ untill the next sample in the pattern should be triggered. For samples played simultaneously all but one have a Next sample value of 0, which makes sense play the next sample 0 ticks after this sample.
 ### Pad Code
-
-### Bank Switch
+Specifies the bank offset and pad number according to the following formula: bank_offset*13 + pad number (1-12) + 46.
+### Bank Switch 
+Specifies whether the bank offset efers to the top row (A/B/C/D/E) o the bottom row (F/G/H/I/J).
 ### Velocity
+Specifies the velocity or amplitude of the sample in the range 1 - 127. While the SP-404SX does not  record velocit nor have velocity sensitive pads the pattern function can playback samples with respect to the velocity specified here.
 ### Length
+Specifies the number of _ticks_ until the sample should be turned off.
 
    

@@ -43,7 +43,7 @@ Specifies the number of _ticks_ untill the next sample in the pattern should be 
 ### Pad Code
 Specifies the bank offset and pad number according to the following formula: bank_offset*12 + pad_number(1-12) + 46.
 ### Bank Switch 
-Specifies whether the bank offset efers to the top row (A/B/C/D/E) o the bottom row (F/G/H/I/J).
+Specifies whether the bank offset efers to the top row (A/B/C/D/E) or the bottom row (F/G/H/I/J).
 ### Velocity
 Specifies the velocity or amplitude of the sample in the range 1 - 127. While the SP-404SX does not  record velocit nor have velocity sensitive pads the pattern function can playback samples with respect to the velocity specified here.
 ### Length

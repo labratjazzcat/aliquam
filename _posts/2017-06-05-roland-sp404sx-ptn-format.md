@@ -39,7 +39,7 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 - 003c = **Length**
 
 ### Next Note
-Specifies the number of _ticks_ untill the next note in the pattern should be triggered.
+Specifies the number of _ticks_ untill the next note in the pattern should be triggered. For notes played simultaneously all but one have a Next Note value of 0, which makes sense play the next sample 0 ticks after this sample.
 ### Pad Code
 
 ### Bank Switch

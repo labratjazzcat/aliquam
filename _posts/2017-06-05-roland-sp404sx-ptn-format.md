@@ -14,7 +14,7 @@ published: true
 <img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 300px;"/>
 </center>
 
-The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at ROLAND/SP-404SX/PTN. Here is an  example pattern file:
+The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card and stored at ROLAND/SP-404SX/PTN/. Here is an  example pattern file:
 
 1. 60 5e 00 00 7f 40 00 3c
 2. 60 5d 00 00 7f 40 00 3c

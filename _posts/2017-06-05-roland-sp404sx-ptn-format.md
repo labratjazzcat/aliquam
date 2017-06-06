@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Roland SP-404SX Pattern Format
-category: spedit
+category: sp-edit
 comments: false
-description: Roland SP404SX binary pattern format
+description: Roland SP-404SX binary pattern format
 tags:
-  - spedit
+  - sp-edit
 published: true
 ---
 
@@ -13,16 +13,14 @@ published: true
 
 <img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 200px;"/>
 
-The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at (path/to/pattern). Here are a few example pattern files:
+The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at ROLAND/SP-404SX/PTN. Here are a few example pattern files:
 
-60 30 01 00 7f 00 00 60 
+60 30 01 00 7f 40 00 60   
 
-a  b  c  d  e  f  g     
-
-- a = Number of Ticks till next note
-- b = Pad Code
-- c = Bank Switch
-- d = ???
-- e = Velocity
-- f = ???
-- g = Length of Sample (double byte)
+- 60 = Number of Ticks till next note
+- 30 = Pad Code
+- 01 = Bank Switch
+- 00 = ???
+- 7f = Velocity
+- 40 = ???
+- 0060 = Length of Sample (double byte)

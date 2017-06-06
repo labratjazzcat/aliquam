@@ -41,7 +41,7 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 ### Next Sample
 Specifies the number of _ticks_ untill the next sample in the pattern should be triggered. For samples played simultaneously all but one have a Next sample value of 0, which makes sense play the next sample 0 ticks after this sample.
 ### Pad Code
-Specifies the bank offset and pad number according to the following formula: bank_offset*13 + pad number (1-12) + 46.
+Specifies the bank offset and pad number according to the following formula: bank_offset*12 + pad_number(1-12) + 46.
 ### Bank Switch 
 Specifies whether the bank offset efers to the top row (A/B/C/D/E) o the bottom row (F/G/H/I/J).
 ### Velocity

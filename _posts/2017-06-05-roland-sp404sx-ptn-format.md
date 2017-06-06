@@ -23,7 +23,7 @@ The Roland SP-404SX is a portable hardware sampler with the ability to store pat
 5. 00 8C 00 00 00 00 00 00 
 6. 00 01 00 00 00 00 00 00
 
-The last 2 lines of each pattern file are an end encoding in which the 3rd and 4th byte of the last line represent the length of the pattern in bars, in this case 1. Each bar in the SP-404SX is divided into 384 _ticks_. The following is an of n analysis he first line of the pattern file, . 
+The last 2 lines of each pattern file are an end encoding in which the 3rd and 4th byte of the last line represent the length of the pattern in bars, in this case 1. Each bar in the SP-404SX is divided into 384 _ticks_. The following is an analysis of the first line of the pattern file, . 
 
 <center>
 1. 60 5E 00 00 7F 40 00 3C   
@@ -31,19 +31,19 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 
 
 - 60 = **Next Sample**
-- 5E = **Pad Code**
+- 5E = **Pad Code** 
 - 00 = **Bank Switch** (00 or 01)
-- 00 = ???
-- 7F = **Velocity** (1-127)
-- 40 = ???
+- 00 = appears to always be 00
+- 7F = **Velocity** (0-7F)
+- 40 = appears to always be 40
 - 003C = **Length**
 
 ### Next Sample
 Specifies the number of _ticks_ untill the next sample in the pattern should be triggered. For samples played simultaneously all but one have a Next Sample value of 0, play the next sample 0 ticks after the current sample.
 ### Pad Code
-Specifies the bank offset and pad number according to the following formula: bank_offset*12 + pad_number(1-12) + 46.
+Specifies the bank offset and pad number according to the following formula: Pad Code = bank_offset*12 + pad_number(1-12) + 34. For the first line in the example pattern the Pad Code specifies the bank offset 4, pad number 12.
 ### Bank Switch 
-Specifies whether the bank offset refers to the top row(A/B/C/D/E), 00 or the bottom row(F/G/H/I/J), 01.
+Specifies whether the bank offset refers to the top row(A/B/C/D/E), 00 or the bottom row(F/G/H/I/J), 01. For the first line in the example pattern the Bank Switch is 00 so the sample this line refers to is D12.
 ### Velocity
 Specifies the velocity or amplitude of the sample in the range 1 - 127. While the SP-404SX does not  record velocity nor have velocity sensitive pads the pattern function can playback samples with respect to the velocity specified here.
 ### Length

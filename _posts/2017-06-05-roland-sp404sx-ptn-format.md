@@ -59,6 +59,6 @@ For the first line in the example pattern the Pad Code specifies the bank offset
 ### Bank Switch 
 Specifies whether the bank offset refers to the top row(A/B/C/D/E), 00 or the bottom row(F/G/H/I/J), 01. For the first line in the example pattern the Bank Switch is 00 so the location of the sample this line refers to is D12.
 ### Velocity
-Specifies the velocity or amplitude of the sample in the range 1 - 127. While the SP-404SX does not  record velocity nor have velocity sensitive pads the pattern function can playback samples with respect to the velocity specified here.
+Specifies the velocity or amplitude of the sample within the range 1 - 127. While the SP-404SX does not  record velocity nor have velocity sensitive pads the pattern function can playback samples with respect to the velocity specified here.
 ### Length
 Specifies the number of _ticks_ until the sample should be turned off.

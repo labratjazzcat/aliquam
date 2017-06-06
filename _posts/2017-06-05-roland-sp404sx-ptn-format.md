@@ -11,7 +11,7 @@ published: true
 
 ## The Roland SP-404SX Pattern Format
 
-<img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 200px;"/>
+<img src="https://i.imgur.com/hr6Cx6I.jpg" alt="SP-404SX" style="width: 400px;" align="middle"/>
 
 The Roland SP-404SX is a portable hardware sampler with the ability to store patterns for playback. On the SP-404SX these patterns are stored on a removable SD card at ROLAND/SP-404SX/PTN. Here is an  example pattern file:
 
@@ -22,16 +22,23 @@ The Roland SP-404SX is a portable hardware sampler with the ability to store pat
 5. 00 8C 00 00 00 00 00 00 
 6. 00 01 00 00 00 00 00 00
 
-The last 2 lines each pattern file are an end encoding in which the 3rd and 4th byte of the last line represent the length of the pattern in bars. The following is a breakdown of the first line.
+The last 2 lines of each pattern file are an end encoding in which the 3rd and 4th byte of the last line represent the length of the pattern in bars. The following is a breakdown of the first line.
 
-60 5e 00 00 7f 40 00 3c   
+1. 60 5e 00 00 7f 40 00 3c   
+
 
 - 60 = Number of Ticks till next note
 - 5e = Pad Code
-- 00 = Bank Switch
+- 00 = Bank Switch (00 or 01)
 - 00 = ???
-- 7f = Velocity
+- 7f = Velocity (1-127)
 - 40 = ???
 - 003c = Length of Sample (double byte)
+
+### Next Note
+### Pad Code
+### Bank Switch
+### Velocity
+### Length
 
 

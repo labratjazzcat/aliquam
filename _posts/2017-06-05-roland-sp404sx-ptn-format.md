@@ -44,7 +44,7 @@ The last 2 lines of each pattern file are an end encoding in which the 3rd and 4
 ### Next Sample
 Specifies the number of _ticks_ untill the next sample in the pattern should be triggered. For samples played simultaneously all but one have a Next Sample value of 0, play the next sample 0 ticks after the current sample. All 4 samples in the example pattern have a Next Note value of 0x60 which is the hex value that represents a quater bar. 384 / 4 = 96 or 0x60. 
 ### Pad Code
-Specifies the bank offset and pad number according to the following formula: Pad Code = bank_offset*12 + pad_number(1-12) + 46. This is a snippet of the function that generates the bank letter and pad number from the hex code.
+Specifies the bank offset and pad number according to the following formula: Pad Code = bank_offset*12 + pad_number(1-12) + 46. Bank offsets are 0 indexed. This is a snippet of the function that generates the bank letter and pad number from the hex code.
 <div class="env-header">python</div>
 {% highlight python linenos %}
 real_code = int(hex_code, 16) - 46
@@ -57,7 +57,7 @@ if pad == 0:
 For the first line in the example pattern the Pad Code specifies the bank offset 3, pad number 12.
 
 ### Bank Switch 
-Specifies whether the bank offset refers to the top row(A/B/C/D/E), 00 or the bottom row(F/G/H/I/J), 01. For the first line in the example pattern the Bank Switch is 00 so the sample this line refers to is D12.
+Specifies whether the bank offset refers to the top row(A/B/C/D/E), 00 or the bottom row(F/G/H/I/J), 01. For the first line in the example pattern the Bank Switch is 00 so the location of the sample this line refers to is D12.
 ### Velocity
 Specifies the velocity or amplitude of the sample in the range 1 - 127. While the SP-404SX does not  record velocity nor have velocity sensitive pads the pattern function can playback samples with respect to the velocity specified here.
 ### Length

@@ -5,7 +5,7 @@ description: More information about me and this website.
 published: true
 ---
 
-Hi, my name is Robert Gonzalez. I am a computer science graduate from Florida State University seeking full time employment in the Miami area.
+Welcome to ByteFlip! My name is Robert Gonzalez and I am a recent computer science graduate from Florida State University. My interest currently include mobile development, backend development, data analytics, and reverse engineering. If you think I might be a good fit or just want to get in contact about any of the projects showcased here or on my Github you can reach out to me below.
 
 ## Contact form
 
